@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #333;
+      }
+      iframe {
+        position: absolute;
+        width: 60%;
+        height: 50%;
+        top: 20%;
+        left: 20%;
+        z-index: 999;
+      }
+      .game-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .blinking-text {
+        font-size: 36px;
+        animation: blinker 1s linear infinite;
+        text-align: center;
+      }
+      @keyframes blinker {
+        0% {
+          color: red;
+        }
+        33% {
+          color: blue;
+        }
+        66% {
+          color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="https://chromedino.com/batman/" frameborder="0" scrolling="no" width="100%" height="100%"></iframe>
+    <div class="game-container">
+      <p class="blinking-text">I HACKED the dino-game and made a batman-game. Muahahaha</p>
+      <br>
+    </div>
+  </body>
+</html>
